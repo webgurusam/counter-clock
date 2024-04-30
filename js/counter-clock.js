@@ -79,6 +79,6 @@ const reset = () => {
     }
 
     second.innerHTML = sec;
-    min.innerHTML = min;
-    hr.innerHTML = hr;
+    minute.innerHTML = min;
+    hour.innerHTML = hr;
 }
