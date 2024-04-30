@@ -7,8 +7,26 @@
     <!-- tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-slate-200">
     
+    <div class="container mx-auto mt-20 flex items-center flex-col bg-slate-400 p-20 rounded">
+        <!-- counting time container -->
+        <div id="counting-time-container" class="p-10">
+            <p class="text-2xl" id="displaySec">
+                <span><span id="hour" class="text-8xl">00</span> Hour</span> 
+                <span><span id="minute" class="text-8xl">00</span> Min</span> 
+                <span><span id="second" class="text-8xl">00</span> Sec</span> 
+                <span id="count" class="text-8xl">00</span>
+            </p>
+        </div>
+
+        <!-- buttons container -->
+        <div id="buttons-container" class="p-10">
+            <button onclick="start()" class="bg-green-700 hover:bg-green-600 text-yellow-50 p-3 rounded mr-3">Start</button>
+            <button onclick="stop()" class="bg-red-700 hover:bg-red-600 text-yellow-50 p-3 rounded mr-3">Stop</button>
+            <button onclick="reset()" class="bg-blue-700 hover:bg-blue-600 text-yellow-50 p-3 rounded">Reset</button>
+        </div>
+    </div>
 
     <!-- scripts -->
     <script src="./js/counter-clock.js"></script>
