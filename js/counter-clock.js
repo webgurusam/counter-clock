@@ -37,14 +37,19 @@ const timer = () => {
 
         // set zero before counting up time
         if(sec < 10){
-            second.innerHTML = '0' + sec;
+            sec = '0' + sec;
         }
         if(min < 10){
-            min.innerHTML = '0' + min;
+            min = '0' + min;
         }
         if(hr < 10){
-            hr.innerHTML = '0' + hr;
+            hr = '0' + hr;
         }
+
+        // set all the values in counting up clock
+        second.innerHTML = sec;
+        min.innerHTML = min;
+        hr.innerHTML = hr;
 
         // calling timer function after 1 second
         setTimeout(timer, 1000);
