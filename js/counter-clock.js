@@ -48,8 +48,8 @@ const timer = () => {
 
         // set all the values in counting up clock
         second.innerHTML = sec;
-        min.innerHTML = min;
-        hr.innerHTML = hr;
+        minute.innerHTML = min;
+        hour.innerHTML = hr;
 
         // calling timer function after 1 second
         setTimeout(timer, 1000);
